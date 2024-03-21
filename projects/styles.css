@@ -1,0 +1,179 @@
+html{
+    background-color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #002657;
+}
+h1{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+}
+h2{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+}
+h3{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* HEADER */
+header{
+    background-color: #002657;
+    color: white;
+    text-align: center;
+    padding: 5% 20%;
+}
+nav{
+    /* position: sticky;
+    top:0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background: #002657;
+    align-items: center;
+    padding-left: 2%;
+
+}
+a:hover{
+    border-color: white;
+    background-color: #c3cdec;
+    color:black;
+    outline-color: #c3cdec;
+}
+a:focus{
+    border-color: white;
+    background-color: #c3cdec;
+    color:black;
+    outline-color: #c3cdec;
+}
+a{
+    color: white;
+}
+#navlinks {
+    display: flex;
+    padding-right: 2%; 
+    column-gap: 20px;
+}
+
+/* POUR Cards */
+.pour{
+    position: relative;
+    /* left: 15%; */
+    width: 70%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #002657;
+    background: #F0F4F9;
+    box-shadow: 0px 0px 10px 0px #808080;
+    margin-bottom: 1%;
+}
+#pour{
+    position: relative;
+    margin: 0 auto;
+    /* left: 6%; */
+    width: 70%;
+    max-width: 1024px;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+ul lh{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    right: 5%;
+}
+.pourlist li{
+    margin-left: 5%;
+    line-height: 20.7px;
+}
+.lhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    column-gap: 6%;
+    position: relative;
+    right: 2%;
+}
+
+/* ABOUT */
+#about{
+    position: relative;
+    margin: 0 auto;
+    /* left: 6%; */
+    width: 70%;
+    max-width: 1024px;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+#abouth{
+    margin-bottom: 5%;
+}
+
+/* Bio */
+#me{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0%;
+}
+#bio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    padding-bottom: 2%;
+}
+#biotext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    position: relative;
+    left: 8%;
+}
+#about img{
+    max-width: 150px;
+    height: auto;
+    position:relative;
+    left: 2%;
+}
+/* Bio */
+
+#lists{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2%;
+    line-height: 20.7px;
+}
+#hobbies{
+    position: relative;
+    left: 30%;
+}
+
+/* Footer */
+footer{
+    color: white;
+    background: #002657;
+    text-align: center;
+    line-height: 10px;
+    padding: 1%;
+}
+

@@ -1,0 +1,495 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/6a74bf3a6d.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessible Web Design</title>
+        <link rel="stylesheet" href="intermediate_styles.css">
+        <script src="myscripts.js"></script>
+        <link rel="icon" type="image/x-icon" href="/UFIT website/accessibility.svg">
+    </head>
+
+    <body>
+        <!-- nav -->
+        <nav>
+            <p id="logo">a11y practice</p>
+            <div id="navlinks">
+                <div id="introlink">
+                    <a href="#intro">Introduction</a>
+                </div>
+                <div id="wcaglink">
+                    <a href="#wcag">WCAG</a>
+                </div>
+                <div id="pourlink">
+                  <a href="#pour">POUR Principles</a>  
+                </div>
+                <div id="toolslink">
+                    <a href="#tools">Tools</a>
+                </div>
+                <div id="aboutlink">
+                   <a href="#about">About</a> 
+                </div>
+                <div id="contactlink">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero -->
+        <header>
+            <i class="fas fa-universal-access fa-2x"></i>
+            <h1>Accessible Web Design</h1>
+            <p>A guide to accessibility on the web, including the importance, challenges, and principles of accessible web design.</p>
+        </header>
+
+        <!-- intro section -->
+        <section id="intro" role="region" aria-label="Introduction">
+            <!-- POUR Principles H2 -->
+            <article id="introduction">
+                <h2>Introduction to Web Accessibility</h2>
+                <p>
+                    Web accessibility involves making all digitial content accessible to a variety of users. As a tool for developers, 
+                    the Web Content Accessibility Guidelines (WCAG) outlines principles that should be adhered to in order to make sure 
+                    web pages are designed with accessibility built in.
+                </p>
+            </article>
+            
+            <!-- POUR Section Wrapper -->
+            <div id="introSect">
+                <!-- Photo Section -->
+                <article id="importance">
+                    <!-- Photo -->
+                    <img src="https://s3-alpha-sig.figma.com/img/0ba5/929e/b278c725857caed1c1288121d7d0b416?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jhHfhdDCvM8SHxifnNPt3c~AJ8IkqZtVhJ~~ekXtGyd4WYLRbY4XerW-VSkniqCuyTkOBBpCP-mCz7wZSu8gN2-Jkf7L--3dPJKdRnIWFpa6bmvxPJg3R0XU0g9vj1jfYSX54XKVExcOVx3CZIwRr~PYLPfJ-9~Sml~jtaOq32hR60PIuRsui11L1y2govR4FkG0ysT5NuY6hgKooIFtVFZenDO2OoxIBZ1t4wrW89JRCsBlBMz~9MkU8rmir3CV6uo2bDYwYIbsJVeWhEIJAWp9rI8pIiJ8Xyih2aPtm3aP-4mzPmDBAOrYMh-j4J-8XWkhT~GWVXbgLCeb6O7EIQ__" 
+                    id="accessibility" alt="Accessibility icon">
+                    <!-- Text -->
+                    <div id="importanceTxt">
+                        <h3>Why is web accessibility important?</h3>
+                        <p>
+                            Content on the web should be universally accessible. Often times, however, people with disabilities struggle to access 
+                            the same web content that abled users can. Web accessibility is important because it places a focus on making sure all 
+                            users are given the same oppurtunity to engage with information on the web, regardless of their abilities. 
+                        </p>
+                    </div>
+                </article>
+                
+                <!-- Photo Section -->
+                <article id="challenges">
+                    <!-- Photo -->
+                    <img src="https://s3-alpha-sig.figma.com/img/898a/1752/e35ac0d54462ce7fe0a8334c61e4f9e1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MAGtNkzbZsGEVSeWiKPhlMh5duwES8uJmhl4fZWGb6C66h0fdUx4KOmkNyofKLZ8Y7zAfbyHVz8~9iNGQ4CWZjJdWfQHfGDkKKrxYdwc4~npuaD5-2Sc~HdzFOyOWupPBYU8zYmK539dTQlsYiWEEagiIrgmltxbJ03JKm0NtZujaIFLsvLqfBK9gWwQCe-lmx0DGrC2t2Q9suTX8xM87lqjO0JdvMc2PIbQMtNVch4cr2HPHKrKFaffI32wqI7j-0NIIAtFAk4PEOWIN9zUwGMWPGvqe5lxdpnkCG3SoB7oqp-l9Gm0TLMERFEhODeSYVc3flfhKEUzdA218hFxyQ__"
+                    id="keyboard" alt="Person using braile keyboard">
+                    <!-- Text -->
+                    <div id="challengesTxt">
+                        <h3>What are some common challenges for users?</h3>
+                        <p>
+                            For blind or visually impaired users, challenges include not having access to visual content such as videos, images, 
+                            text and other content that has been obscured. For deaf users, audio content such as videos and audio files may be 
+                            inaccessible. In both cases it's important to have media alternatives.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- WCAG Section -->
+        <section id="wcag" role="region" aria-label="Web Content Accessibility Guidelines">
+            <!-- WCAG H2 -->
+            <div id="wcagH2">
+                <img src="https://s3-alpha-sig.figma.com/img/6820/cfea/df9ec05217887757dbe77383c8e3a8b1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q3L-nSWrtJUZw06VMJ870Re6Iu9XD2jvWC~t1pVISaaAAyOZT2f-np02r0WucPirXCyQF61oqk~YRw6Dx0SV5cPM1x7wq8IhuL6FZ42Nk~WkN8HVA6UtciS9uR7sGEX1dBkV8mZoof7jY18W7erXV3v~A4F8F9UcY323ndVXxe5zFzEK82beqqi0ln9HwmNHE0WDwHkK9CFgGulGkyagK92JX-fgXYJj05pyOrlCfD~3OQajyNVzNX2SGBO16fGAdRqo3oTge9Za5dx5mS~Abo~-y6Q-V15hkPSoRmnoXRAvwREA96R2IgE7KDeHt78WXS2osc1FF0orbL2uP5GDvw__" 
+                id="" alt="">
+                <h2>What is WCAG?</h2>
+                <p>
+                    WCAG stands for Web Content Accessibility Guidelines. They are guidelines that detail what is and isn't accessible in 
+                    terms of web content.
+                </p>
+            </div>
+
+            <!-- WCAG  Text Wrapper-->
+            <div id="wcagTxt">
+                <!-- Text -->
+                <div id="history">
+                    <h3>History of WCAG</h3>
+                    <p>
+                        WCAG 1.0 was developed in 1999 as part of the Web Accessibility Initiative (WAI) by the World Wide Web Conortium (W3C). 
+                        It provided clarity and structure for web developers by creating a rubric and testable criteria for success. Since 
+                        then, WCAG has been updated several times. In 2008, WCAG 2.0 introduced the four POUR principles of web accessibility. 
+                        It was expanded upon in 2018 with WCAG 2.1, the most modern version, which accounts for accessibility on mobile devices 
+                        and other recent advances in technology that WCAG 2.0 could no longer keep up with. 
+                    </p>
+                </div>
+
+                <!-- Text -->
+                <div id="conformance">
+                    <h3>Levels of Conformance</h3>
+                    <p>
+                        WCAG has three levels of conformance: A, AA, and AAA. Level A describes the minimum level of conformance. Level AA is 
+                        generally adopted as the requirement for accessible web sites, and satisfies the criteria for both Level A and Level AA. 
+                        Level AAA is the highest level of conformance, meeting the success criteria for all other levels. For some content, it is 
+                        not possible to satisfy all Level AAA criteria.
+                    </p>
+                </div>
+
+                <!-- Text -->
+                <div id="guidelines">
+                    <h3>Guidelines and Success Criteria</h3>
+                    <p>
+                        The guidelines and success criteria laid out in WCAG are meant to be tools for developers to test if their websites are 
+                        accessible. In WCAG 2.1 there are three types of guidance provided: sufficient techniques, advisory techniques, and failures. 
+                        While these are important considerations, it's worth noting that W3C reccomends prioritizing meeting the success criteria 
+                        listed in WCAG over complying with the reccomended techniques. Other techniques can and should be used to make websites 
+                        accessible.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POUR Section -->
+        <section id="pour" role="region" aria-label="Principles">
+            <!-- POUR H2 -->
+            <div id="pourH2">
+                <h2>What are POUR Principles?</h2>
+                <p>
+                    POUR is an acronym that includes four principles for accessibility as outlined by WCAG. These four pillars encapsulate 
+                    goals and criteria to ensure web pages are designed with accessibility in mind.
+                </p>
+            </div>
+
+            <!-- POUR Section Accordion -->
+            <div id="accordion">
+                <!-- displayContent() needs to be done in javasript  -->
+                <button type="button" aria-label="Read more about the Perceivable POUR Principle" 
+                onclick="myFunction()" class="dropbutton" id="pbutton" >
+                    <h3>Perceivable</h3>
+                    <i class="fa-solid fa-chevron-down fa-2x" id="p"></i>
+                </button>
+                <div class="dropdown-content" id="pdrop">
+                    <p>
+                        Everything on a webpage should be perceivable to the user, including the UI (User Interface) and page content. 
+                        To acheive this, content must be perceivable through multiple means. This way, users who have one or more senses restricted
+                        are still aware of the content available.
+                    </p>
+                    <div class="pourlist">
+                        <ul>
+                            <div class="lhead">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                <lh>Example Problems</lh>
+                            </div>
+                            <li>Audio content is not perceivable to deaf users</li>
+                            <li>Images are not perceivable to blind users</li>
+                            <li>Information conveyed through color is not perceivable to colorblind users</li>
+                        </ul>
+                        <ul>
+                            <div class="lhead">
+                                <i class="fa-solid fa-square-check"></i>
+                                <lh>Potential Solutions</lh>
+                            </div>
+                            <li>Audio content should have a text alternative, such as transcrips and captioning on videos</li>
+                            <li>Images should have alt text</li>
+                            <li>Information should never rely soley on color to distinguish it</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" aria-label="Read more about the Operable POUR Principle" 
+                onclick="myFunction()" class="dropbutton" id="obutton">
+                    <h3>Operable</h3>
+                    <i class="fa-solid fa-chevron-down fa-2x" id="o"></i>
+                </button>
+                <div class="dropdown-content" id="odrop">
+                    <p>
+                        Users should be given multiple means to interact with a webpage. The UI should be accessible to everyone, whether 
+                        they use a mouse, keyboard, mouth stick, or other tool to navigate a website. Under no circumstances should the UI 
+                        require an action that a user is not able to perform.
+                    </p>
+                    <div class="pourlist">
+                        <ul>
+                            <div class="lhead">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                <lh>Example Problems</lh>
+                            </div>
+                            <li>A button requires a click to perform an action</li>
+                            <li>Content is timed, creating an obstacle for some users</li>
+                            <li>Animation and flashing content prevents some users from being able to use the webpage</li>
+                        </ul>
+                        <ul>
+                            <div class="lhead">
+                                <i class="fa-solid fa-square-check"></i>
+                                <lh>Potential Solutions</lh>
+                            </div>
+                            <li>Operable modalities should include clicks, keyboard entries, pointer gestures, etc</li>
+                            <li>Preferable content would not be timed, but if so should allow for pauses, suppressed interruptions, and timeout warnings</li>
+                            <li>Nothing should flash more than 3 times per second, and animation can be disabled</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" aria-label="Read more about the Understandable POUR Principle"
+                 onclick="myFunction()" class="dropbutton" id="ubutton">
+                    <h3>Understandable</h3>
+                    <i class="fa-solid fa-chevron-down fa-2x" id="u"></i>
+                </button>
+                <div class="dropdown-content" id="udrop">
+                    <p>
+                        Website information, functions, and navigation should be intuitive for the user. Everything they need to know about the page,
+                        including content and operation, should be available from the page.
+                    </p>
+                    <div class="pourlist">
+                        <ul>
+                            <div class="lhead">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                <lh>Example Problems</lh>
+                            </div>
+                            <li>The website uses tehnical jargon, slang, or abbreviations which are uninterpretable to the user</li>
+                            <li>There is no perceivable change in content when focused on</li>
+                            <li>Forms that require input do not specify what is needed from the user or offer validation/correction</li>
+                        </ul>
+                        <ul>
+                            <div class="lhead">
+                                <i class="fa-solid fa-square-check"></i>
+                                <lh>Potential Solutions</lh>
+                            </div>
+                            <li>Websites should use language appropriate targetted language so that it can be undestand by the website's audience</li>
+                            <li>Users should be able to understand where they are on the page, and content focused on should indicate location</li>
+                            <li>Forms should identify errors and suggest solutions with clear lables and instructions for users</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" aria-label="Read more about the Robust POUR Principle"
+                 onclick="myFunction()" class="dropbutton" id="rbutton">
+                    <h3>Robust</h3>
+                    <i class="fa-solid fa-chevron-down fa-2x" id="r"></i>
+                </button>
+                <div class="dropdown-content" id="rdrop">
+                    <p>
+                        A website must be able to fit the current needs of the user, as well as anticipate and adapt to future needs. It should also be able to 
+                        be reliable interpreted by the user through various means, including assistive technologies. Content should remain accessible and interpretable
+                        even as technology evolves.
+                    </p>
+                    <div class="pourlist">
+                        <ul>
+                            <div class="lhead">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                <lh>Example Problems</lh>
+                            </div>
+                            <li>Website not compatible with older browsers</li>
+                            <li>Website design not standard across platforms</li>
+                            <li>Website not supported by multple assistive technologies</li>
+                        </ul>
+                        <ul>
+                            <div class="lhead">
+                                <i class="fa-solid fa-square-check"></i>
+                                <lh>Potential Solutions</lh>
+                            </div>
+                            <li>HTML should be compatible across browser and OS versions</li>
+                            <li>Website should be scalable and compatible with all platforms</li>
+                            <li>Website should account for various user agents and be supported by all</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools -->
+        <section id="tools" role="region" aria-label="Accessibility Tools">
+            <div id="toolsH2">
+                <h2>Accessibility Testing Tools</h2>
+                <p>
+                    Using testing tools is a great way to make sure that web pages are accessibile throughout the building and design process. 
+                    Listed below are a few tools that may prove useful for checking web accessibility.
+                </p>
+            </div>
+
+            <div class="toolcards">
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://th.bing.com/th/id/R.4e7d9c973995f7e7a9579dd9593cb000?rik=YkW%2bodU%2fVx1yuA&riu=http%3a%2f%2fwww.bizstreamtoolkit.com%2fKENTICOCOMPAREMARKETINGSITE%2fmedia%2fimages%2fsiteimprove-transparent_1.png%3fext%3d.png&ehk=NuFSvVP7JquUkTU7RKT64ylm8U1cEp3xnEZSVT6V2t4%3d&risl=&pid=ImgRaw&r=0" 
+                            alt="Siteimprove logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>Siteimprove</h3>
+                            <p>
+                                Generates a Digital Certainty Index to see how web pages live up to standards, 
+                                assessing Quality Assurance, Search Engine Optimization, and Accessibility.
+                            </p>
+                            <div class="links">
+                                <a href="https://www.siteimprove.com/integrations/browser-extensions/">Link to learn more about Siteimprove</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://th.bing.com/th/id/OIP.7TIv6dMMnOM6rGIS8awoPgHaCH?rs=1&pid=ImgDetMain" 
+                            alt="axe DevTools by deque logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>Deque</h3>
+                            <p>
+                                Performs accessibility audits on contents of web pages and applications to ensure 
+                                consistency with Web Content Accessibility Guidelines (WCAG).
+                            </p>
+                            <div class="links">
+                                <a href="https://www.deque.com/axe/">Link to learn more about Deque</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://www.topwebaccessibilitychecker.com/wp-content/uploads/sites/2/2021/01/WAVE-Logo.jpg" 
+                            alt="WAVE logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>WAVE</h3>
+                            <p>
+                                Identifies accessibility and Web Content Accessibility Guidelines (WCAG) errors and 
+                                facilitates human evaluation of web content.
+                            </p>
+                            <div class="links">
+                                <a href="https://wave.webaim.org/">Link to learn more about WAVE</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+                
+            <div class="toolcards">
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://cdn.rswebsols.com/wp-content/uploads/2016/11/TestLodge-Logo.jpg" 
+                            alt="TestLodge logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>TestLodge</h3>
+                            <p>
+                                Tests keyboard navigation accessibility to ensure that keyboard users can accesss the same 
+                                features as those navigating web pages with a mouse.
+                            </p>
+                            <div class="links">
+                                <a href="https://blog.testlodge.com/keyboard-navigation-accessibility-testing/">Link to learn more about TestLodge</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://th.bing.com/th/id/OIP.PL2gnccFKdCp8FSQO-f_KgAAAA?rs=1&pid=ImgDetMain" 
+                            alt="WebAIM logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>WebAIM</h3>
+                            <p>
+                                Checks the color contrast between items in the foreground and background to ensure legibility. Compares 
+                                results to WCAG levels of conformance.
+                            </p>
+                            <div class="links">
+                                <a href="https://webaim.org/resources/contrastchecker/">Link to learn more about WebAIM</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="gallery">
+                        <div class="logo">
+                            <img src="https://comptoir-du-libre.org/img/files/Softwares/63/photo/avatar/Software_logo_NVDA.png" 
+                            alt="NVDA logo">
+                        </div>
+
+                        <div class="desc">
+                            <h3>NVDA</h3>
+                            <p>
+                                A free and portable screen reader that many blind users use to navigate websites. 
+                                Available for PCs running Microsoft Windows 7 SP1 and later.
+                            </p>
+                            <div class="links">
+                                <a href="https://www.nvaccess.org/download/">Link to learn more about NVDA</a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about"  role="region" aria-label="About Me">
+            <h2>About me</h2>
+
+            <div id="bio">
+                <img src="https://media.licdn.com/dms/image/D5603AQFGe8S6Ruiz4g/profile-displayphoto-shrink_800_800/0/1674068671906?e=1713398400&v=beta&t=Y_KQbvBZoNicL9PpsGGM-1YEZ783dhDxjT7P5BFWG1g"
+                alt="Alyssa Mann" id="headshot">
+                
+                <div id="biotxt">
+                    <div id="namelinks">
+                        <h3>Alyssa Mann</h3>
+
+                        <a href="https://github.com/alymann" aria-label="Go to Alyssa's Github">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="mailto:a.mann@ufl.edu" aria-label="Go to Alyssa's email">
+                        <i class="fa-solid fa-at"></i>
+                        </a>
+                    </div>
+
+                    <p>
+                        I'm a second year computer science major at the University of Florida in the College of Engineering. I'm currently 
+                        trying to learn all that I can about programming, web development, and accessibility. I love food, books, seashells, and most 
+                        of all being creative. I'm hoping to develop my own app one day -- I want to start working on it soon!
+                    </p>
+                
+                    <div id="education">
+                        <h4>Education</h4>
+                        <p>Current School: University of Florida</p>
+                        <p>Major: Computer Science</p>
+                        <p>Expected Graduation: Spring 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lists">
+                <!-- <h4>Professional Interests</h4> -->
+                <ul>
+                    <lh><h4>Professional Interests</h4></lh>
+                    <li>Front-End Development</li>
+                    <li>Back-End Development</li>
+                    <li>Software Engineering</li>
+                </ul>
+
+                
+                <!-- <h4>Hobbies</h4> -->
+                <ul>
+                    <lh><h4>Hobbies</h4></lh>
+                    <li>Listening to music</li>
+                    <li>Crochet</li>
+                    <li>Painting</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <p> &#169 2024 Alyssa Mann</p>
+            <p>Built with HTML/CSS</p>
+        </footer>
+    </body>
+</html>
