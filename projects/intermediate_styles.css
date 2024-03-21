@@ -360,7 +360,9 @@ header p{
     text-underline-offset: 5px;
 }
 .gallery img {
-    width: 100%;
+    width: 325px;
+    height:175px;
+    object-fit: contain;
 }
 .logo{
     display: flex;
