@@ -31,3 +31,14 @@ document.addEventListener("scroll", () => {
       }
     });
   });
+
+  // navburger
+  // ref: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp 
+  function myFunction() {
+    var x = document.getElementsByClassName("#nav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  } 
