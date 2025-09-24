@@ -1,7 +1,7 @@
 /* General Formatting */
 *{
     font-family: "Genos";
-    background-color: #2B292D;
+    background-color: #3f235e;
     color: #ffffff;
 }
 
@@ -60,7 +60,7 @@ header{
     width: 100%;
     justify-content: space-between;
     /* align-items: center; */
-    background-color: #2B292D;
+    background-color: #3f235e;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -68,7 +68,7 @@ header{
     align-items: center;
 }
 header.scrolled {
-    background: #2B292D;
+    background: #3f235e;
     border-bottom: 1px solid rgba(35, 16, 41, 0.3);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
 }
@@ -83,7 +83,7 @@ header a{
     list-style-type: none;
     gap: 35px;
     float: right;
-    padding: 2px 20px 2px 20px;
+    padding: 10px 20px 0px 20px;
 }
 #navlist a:hover{
     text-decoration: underline;
@@ -103,9 +103,8 @@ header a{
     color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
 }
-
-/* #navlist #li-home a:hover {
-    color:#7f6dbf
+#navlist #li-home a:hover {
+    color:#b19eec
 }
 #navlist #li-art a:hover {
     color:#f9e8ce
@@ -115,10 +114,14 @@ header a{
 }
 #navlist #li-us a:hover {
     color:#e49c9d
-} */
+}
 
 #title{
-    padding: 24px 0 24px 20px;
+    padding: 10px 0px 10px 20px;
+    font-size: 64px;
+    display:flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Home Section */
@@ -167,121 +170,94 @@ header a{
  }
 
 
-/* Experience Section */
-#exp .button{
-    padding: 2%;
-    border: none;
-}
-#langlists{
+ #us .content{
     display: flex;
     flex-direction: row;
-}
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+ }
 
 
-/* Projects Section */
-#projects{
-    /* background-color: rgba(243, 207, 225, 0.479); */
-}
-.tools{
-    display: flex;
-    gap: 25px;
-}
-.button{
-    /* background-color: rgba(192, 19, 100, 0.61); */
-    background-color: #cc3e80;
-
-    border-width: .5px;
-    border-radius: 9999px;
-    color: #ffffff;
-
-    width:max-content;
-    height: min-content;
-
-    margin-bottom: 1rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.button:hover, .button:focus{
-    background-color: rgb(190, 19, 99);
-}
-.content-heading{
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-.content-heading i{
-    color: #303030;
-    margin-bottom: 16px;
-}
-.content-heading i:hover{
-    color: rgb(190, 19, 99);
-}
-.content-heading i:focus{
-    color: rgb(190, 19, 99);
+/* Art Slideshow */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-
-/* Contact Section */
-#contact .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#email, #github, #linkedin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contactlink a{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 10px;
-    color: #303030;
-    text-decoration: none;
-}
-.contactlink p{
-    text-decoration: underline;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-#contact .content a:hover,
-#contact .content a:focus{
-    color:rgb(192, 19, 100);
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: transparent;
 }
 
-
-/* .contactlink{
-    display: flex;
-    flex-direction: column;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-#email, #github, #linkedin{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items:center;
-    justify-content: space-between;
 
-} */
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
-/* #contact .container li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-} */
-/* #contact .container a{
-    color: #303030;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
-#contact .container a:hover,
-#contact .container a:focus{
-    color:rgb(192, 19, 100);
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-#contact .content{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-} */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 
 /* Footer */
@@ -292,8 +268,9 @@ footer{
     color: white;
     text-align: center;
     padding: 34px 96px;
-    /* padding: 1%; */
-    background-color: rgb(192, 19, 100);
+    
+    border-bottom: 1px solid rgba(35, 16, 41, 0.3);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
 }
 
 footer p{

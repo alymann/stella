@@ -20,19 +20,22 @@
 
         <script src="https://kit.fontawesome.com/6a74bf3a6d.js" crossorigin="anonymous"></script>
         
-        <link rel="icon" type="image/x-icon" href="/images/star.png">
+        <link rel="icon" type="image/x-icon" href="/images/StarCircle.png">
     </head>
 
     <body>
         <header>
-            <a href="#home" id="title">Stella</a>
+            <a href="#home" id="title">
+                <img src="/images/StellaWhisperingStars_Logo.png" style="height:50px;">
+                Stella
+            </a>
             <nav>
                 <div class="nav">
                     <ul id="navlist">
                         <li id="li-home"><a href="#countdown" class="home">Home</a></li>
                         <li id="li-about"><a href="#about" class="about">About</a></li>
                         <li id="li-art"><a href="#art" class="art">Art</a></li>
-                        <li id="li-us"><a href="#projects" class="projects">Us</a></li>
+                        <li id="li-us"><a href="#us" class="us">Us</a></li>
                         <li>
                             <button class="navburger" onclick="navburger()">
                             <i class="fa fa-bars"></i>
@@ -47,8 +50,9 @@
         <main>
             <section id="countdown">
                 <div class="countdown-text">
-                    <h1 style="font-size: 120px;">Stella</h1>
-                    <h1 style="font-size: 60px;">and the Whispering Stars</h1>
+                    <img src="/images/StellaWhisperingStars_Logo.png" style="height:500px; padding-top:50px;">
+                    <!-- <h1 style="font-size: 120px;">Stella</h1>
+                    <h1 style="font-size: 60px;">and the Whispering Stars</h1> -->
                 </div>
                 <div class="countdown">
                     <p id="timer"></p>
@@ -89,246 +93,103 @@
                 </div>
 
                 <div class="content">
-                    <div id="education">
-                        <h3>Education</h3>
-                        <p><strong>Bachelor of Science (BS) in Computer Science</strong></p>
-                        <p><em>University of Florida | Herbert Wertheim College of Engineering</em></p>
-                        <p><u>Minor</u>: Digital Arts and Sciences</p>
-                        <p><u>Certificate</u>: AI Fundamentals and Applications</p>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides">
+                            <img src="/images/Ship INT INT_final_w_list.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/StellaTurnaround.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/Stella Rough Sketches.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/Stella_Walk_Rough_2_GIF.gif" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
 
-                    <div id="studyabroad">
-                        <h3>Study Abroad</h3>
-                        <p><strong>Cross Cultural Engineering and Design</strong></p>
-                        <p><em>University of Florida | University of Kyoto</em></p>
-                        <p><u>Relevant Courses</u>: Cross-Cultural Design, Performant Programming</p>
-                    </div>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div> 
 
-                    <div id="langs">  
-                        <h3>Languages</h3>
-                        <p>
-                            As a computer science student, I've gotten the oppurtunity to become familiar with a number of languages 
-                            in both front-end and back-end development. Of course, there's still many more that I'm working towards 
-                            a proficiency in. Below are some languages I've used in the past, as well as a short list of languages that 
-                            I plan on learning soon.
-                        </p>
-                    </div>  
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
 
-                    <div id="resume">
-                        <h3>Resume</h3>
-                        <p>
-                            For more information on my education, experiences, and skills, please 
-                            download my resume available below!
-                        </p>
-                        <a href="documents/AlyssaMann_Resume.pdf" download="AlyssaMann_Resume" target="_blank">
-                            <button type="download" class="button">
-                                Download Resume
-                                <i class="fa-solid fa-download"></i>
-                            </button>
-                        </a>
-                    </div>
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="us">
                 <div class="heading">
-                    <h2>Projects</h2>
+                    <h2>Meet the Developers</h2>
                 </div>
 
                 <div class="content">
-                    <div id="sudoku">
-                        <div class="content-heading">
-                            <h3>Sudoku</h3>
-                            <a href="https://replit.com/@alymann/Sudoku" aria-label="Go to sudoku Replit">
-                                <i class="fa-solid fa-link fa-2xl"></i>
-                            </a>
-                            <a href="https://github.com/alymann/Sudoku" aria-label="Go to sudoku GitHUb">
-                                <i class="fa-brands fa-github fa-2xl"></i>
-                            </a>
-                        </div>
-                        <p>
-                            My teammates and I worked together to create a game of Sudoku in Python from scratch, 
-                            featuring random puzzle generation, an interactive UI, and solution verification. 
-                            This was one of the first coding projects that I completed and my first time ever 
-                            working with game creation.
-                        </p>
-                        <div class="tools">
-                            <h4>Languages & Tools:</h4>
-                            <p class="button">Python</p>
-                            <p class="button">Pygame</p>
-                        </div>
+                    <div id="Olivia">
+                        <img src="/images/olivia.jpg" style="padding-bottom:20px;">
+                        <p><strong>Olivia Kerman</strong></p>
+                        <p>Artist</p>
+                    </div>
+                    
+                    <div id="Tehilim" alt="Tay-Leem">
+                        <img src="/images/tehilim.jpg" style="padding-bottom:20px;">
+                        <p><strong>Tehilim Perez</strong></p>
+                        <p>2D Artist & Animator</p>
                     </div>
 
-                    <div id="minesweeper">
-                        <div class="content-heading">
-                            <h3>Minesweeper</h3>
-                            <a href="https://replit.com/@alymann/Minesweeper" aria-label="Go to Minesweeper Replit">
-                                <i class="fa-solid fa-link fa-2xl"></i>
-                            </a>
-                            <a href="https://github.com/alymann/Minesweeper" aria-label="Go to Minesweeper GitHUb">
-                                <i class="fa-brands fa-github fa-2xl"></i>
-                            </a>
-                        </div>
-                        <p>
-                            My first solo game creation, this version of Minesweeper is built using C++ and SFML. 
-                            It features the same core functionality as the original game, including a timer, leaderboard, 
-                            and random generation.
-                        </p>
-                        <div class="tools">
-                            <h4>Languages & Tools:</h4>
-                            <p class="button">C++</p>
-                            <p class="button">SFML</p>
-                        </div>
-                    </div>
-
-                    <div id="pour">
-                        <div class="content-heading">
-                            <h3>POUR Principles</h3>
-                            <a href="/projects/a11y_practice.html" target="_blank" aria-label="Go to POUR Principles Website">
-                                <i class="fa-solid fa-link fa-2xl"></i>
-                            </a>
-                        </div>
-                        <p>
-                            As part of my internship with UFIT, I focused on how to apply accessibility principles 
-                            and best practices to web development. To showcase my understanding of the topic, I was 
-                            able to work alongside UFIT web designers to create my own website which 
-                            features accessible design and an overview on key web accessibility principles.
-                        </p>
-                        <div class="tools">
-                            <h4>Languages & Tools:</h4>
-                            <p class="button"> HTML</p>
-                            <p class="button"> CSS</p>
-                        </div>
-                    </div>
-
-                    <div id="a11y">
-                        <div class="content-heading">
-                            <h3>Accessibility Website</h3>
-                            <a href="/projects/a11y_intermediate.html" target="_blank" aria-label="Go to Accessibility Website">
-                                <i class="fa-solid fa-link fa-2xl"></i>
-                            </a>
-                        </div>
-                        <p>
-                            A more advanced version of <em>POUR Principles</em>, this website features much of the same  
-                            content with the addition of a more comprehensive web design, an explanation of the 
-                            Web Content Accessibility Guidelines (WCAG), and information on web accessibility tools 
-                            and technologies that developers can use to ensure accessibile and equitable web design.
-                        </p>
-                        <div class="tools">
-                            <h4>Languages & Tools:</h4>
-                            <p class="button">HTML</p>
-                            <p class="button">CSS</p>
-                            <p class="button">JavaScript</p>
-                        </div>
+                    <div id="Alyssa">
+                        <img src="/images/alyssa.jpg" style="padding-bottom:20px;">
+                        <p><strong>Alyssa Mann</strong></p>
+                        <p>Web Developer</p>
                     </div>
                 </div>
             </section>
 
-            <section id="contact">
-                <div class="heading">
-                    <h2>Contact Me</h2>
-                    <p>Like what you see? Want to see more? Please reach out to me!</p>
-                    <p>Noticed something that could be improved? Any feedback is greatly appreciated.</p>
-                </div>
-
-                <div class="content">
-                    <div id="email">
-                        <div class="platform">
-                            <h3>Email</h3>
-                        </div>
-                        <div class="contactlink">
-                            <a href="mailto:a.mann@ufl.edu" aria-label="a.mann@ufl.edu">
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>a.mann@ufl.edu</p>
-                            </a>
-                        </div>
-
-                        <div class="contactlink">
-                            <a href="mailto:alyssamann@outlook.com" aria-label="alyssamann@outlook.com">
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>alyssamann@outlook.com</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="linkedin">
-                        <div class="platform">
-                            <h3>LinkedIn</h3>
-                        </div>
-                        <div class="contactlink">
-                            <a href="https://www.linkedin.com/in/alyssa-m-mann/" target="_blank" aria-label="Alyssa Mann">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <p>Alyssa Mann</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="github">
-                        <div class="platform">
-                            <h3>GitHub</h3>
-                        </div>
-                        <div class="contactlink">
-                            <a href="https://github.com/alymann" target="_blank" aria-label="alymann">
-                                <i class="fa-brands fa-github"></i>
-                                <p>alymann</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="container email">
-                        <div class="content-heading">
-                            <h3>Email</h3>
-                        </div>
-                        <ul class="fa-ul">
-                            <li>
-                                <a href="mailto:a.mann@ufl.edu" aria-label="My school email">
-                                <span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
-                                a.mann@ufl.edu
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:alyssamann@outlook.com" aria-label="My personal email">
-                                <span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
-                                alyssamann@outlook.com
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="container linkedin">
-                        <div class="content-heading">
-                            <h3>LinkedIn</h3>
-                        </div>
-                        <ul class="fa-ul">
-                            <li>
-                                <a href="https://www.linkedin.com/in/alyssa-m-mann/" target="_blank" aria-label="My LinkedIn profile">
-                                <span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>
-                                Alyssa Mann
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                        
-                    <div class="container github">
-                        <div class="content-heading">
-                            <h3>GitHub</h3>
-                        </div>
-                        <ul class="fa-ul">
-                            <li>
-                                <a href="https://github.com/alymann" target="_blank" aria-label="My Github profile">
-                                <span class="fa-li"><i class="fa-brands fa-github"></i></span>
-                                alymann
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
-                </div>
-            </section>
         </main>
 
         <footer>
             <p>
                 <i class="fa-regular fa-copyright fa-xs" title="Copyright"></i>
-                2024 Alyssa Mann
+                2025 DIG3588C
             </p>
             <div id="footerlinks">
                 <a href="mailto:alyssamann@outlook.com" aria-label="My personal email">
