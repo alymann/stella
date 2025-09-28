@@ -162,11 +162,18 @@ header a{
     height: 600px;
     width: auto;
     border-radius: 100%;
+    position: relative;
+    right: 5%;
 }
 #abtme p:nth-of-type(1){
    padding-bottom: 30px;
    font-weight: 600;
    font-size: 30px;
+ }
+ #abtme p{
+  position:relative;
+  width: 120%;
+  right: 20%;
  }
 
 
